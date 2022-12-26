@@ -1,0 +1,42 @@
+:root{
+    font-family: quivira;
+}
+.título_página{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.insira_dados{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.insira_dados input{
+    max-width: 50vw;
+    text-align: center;
+}
+.insira_dados button{
+    margin-top: 5px;
+}
+
+.borda_fina:hover{
+    box-shadow: 1px 1px rgba(101, 93, 49, 0.514);
+}
+.borda_fina{
+    border-width: 0.5px;
+    border-radius: 5px;
+}
+.resultado_p{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.resultados{
+    text-align: center;
+}
+.resultado_erro{
+    color: red;
+    display: flex;
+    flex-direction: column;
+
+}

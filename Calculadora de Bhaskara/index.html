@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="bhaskara.js"></script>
+    
+    <title>Calculadora de Bhaskara</title>
+</head>
+<style>
+    @font-face {
+        font-family: quivira;
+        src: url(quivira.otf);
+    }
+</style>
+<body>
+    <header>
+        <p class="título_página">Calculadora de Bhaskara</p>
+    </header>
+    <main class="insira_dados">
+        <label for="valor_a">Insira o valor de A</label>
+        <input id="valor_a" class="borda_fina" type="number" required>
+        <label for="valor_b">Insira o valor de B</label>
+        <input id="valor_b" class="borda_fina" type="number" required>
+        <label for="valor_c">Insira o valor de C</label>
+        <input id="valor_c" class="borda_fina" type="number" required>
+        <button id="enviar" class="borda_fina" onclick="calc()">Enviar</button>
+    </main>
+    <div class="resultados">
+        <div class="resultado_p">
+            <p>X1 = </p><p id="resultado1"></p>
+        </div>
+        <div class="resultado_p">
+            <p>X2 = </p><p id="resultado2"></p>
+        </div>
+        <div class="resultado_p resultado_erro">
+            <p id="resultado3"></p>
+            <br>
+            <p id="delta"></p>
+        </div>
+    </div>
+</body>
+</html>
